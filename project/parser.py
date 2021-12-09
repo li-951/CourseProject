@@ -2,7 +2,7 @@ import pandas as pd
 import csv
 import argparse
 
-default_output_file = "output.csv"
+default_output_file = "project/output.csv"
 
 file_attached = "see attached file"
 replied_email = "re :"
@@ -18,7 +18,7 @@ body_arg_message = "filter based on keywords contained in e-mail body"
 
 
 def cleanData():
-    df = pd.read_csv('original_dataset.csv', encoding='utf-8')
+    df = pd.read_csv('project/original_dataset.csv', encoding='utf-8')
 
     subjects = []
     bodies = []
