@@ -17,6 +17,11 @@ subject_arg_message = "filter based on keywords contained in subject"
 body_arg_message = "filter based on keywords contained in e-mail body"
 
 
+'''
+Cleans data in original csv by separating subject from e-mail body, and labels data
+according to features they have (such as being a reply, being forwarded, or containing
+attachments)
+'''
 def cleanData():
     df = pd.read_csv('project/original_dataset.csv', encoding='utf-8')
 
@@ -51,6 +56,9 @@ def cleanData():
 
     return df
 
+'''
+Filters data depending on flags set by user
+'''
 def filter(df, args):
     for arg in args:
         if args[arg] and arg != "csv":
