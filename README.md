@@ -25,7 +25,7 @@ Team members: Kim Li (kimli2), Kevin Tzeng (ktzeng2), Shreyas Chandrashekaran (s
 
 ## Installation
 
-From the root directory, run the following command to install requirements:
+From the project directory, run the following command to install requirements:
 
 ```bash
 $ pip install requirements.txt
@@ -57,13 +57,13 @@ The following (optional) arguments can be passed in the terminal to filter the d
 
 The data can be simply cleaned and returned by running the following:
 ```bash
-$ python project/parser.py
+$ python parser.py
 ```
 
 To use the filtering flags, 
 For example, [project/sample.csv](project/sample.csv) was created using the following filters:
 ```bash
-$ python project/parser.py --csv 'project/sample.csv' --attachment 1 --reply 1
+$ python parser.py --csv 'sample.csv' --attachment 1 --reply 1
 ```
 
 and contains a list of all e-mails that include an attachment and are a reply to a previous e-mail. 
